@@ -25,7 +25,7 @@ body {
 
 .dark-mode {
   background-color: #20172B;
-  color: rgb(240, 242, 202);
+  color: #f0f2ca;
 }
 .light-mode{
   background-color: #e7c488;
@@ -130,4 +130,8 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* Couleur de la poignée au survol */
+}
+
+.test{
+  color : #353535;
 }

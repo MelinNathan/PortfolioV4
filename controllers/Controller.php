@@ -10,10 +10,10 @@ class Controller
                 break;
 
             case 'projet':
+                $sub = (isset($_GET['sub'])) ? $_GET['sub'] : '';
                 include 'controllers/Projet.php';
-                $projet = isset($_GET['projet']) ? $_GET['projet'] : '';
                 $portfolioController = new Projet();
-                $portfolioController->handleRequest($projet);
+                $portfolioController->handleRequest($sub);
                 break;
             case 'stage':
                 include 'controllers/Stage.php';
@@ -30,10 +30,10 @@ class Controller
                 $portfolioController = new Skill();
                 $portfolioController->handleRequest();
                 break;
-            default:
-                $title = 'Portfolio Nathan Melin';
-                include 'views/index.php';
-                break;
+            // default:
+            //     $title = 'Portfolio Nathan Melin';
+            //     include 'views/index.php';
+            //     break;
         }
     }
 }

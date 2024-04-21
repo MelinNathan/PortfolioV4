@@ -1,15 +1,25 @@
 <?php
 class Projet
 {
-
+    
     public function handleRequest($projet)
     {
-        console_log($projet);
+
         switch ($projet) {
             case 'math':
-                $title = 'Math - Nathan Melin';
-                include 'views/projets/v_math.php';
+                include 'controllers/Math.php';
+
+                $projectController = new Math();
+                $projectController->handleRequest();
+
                 break;
+            case 'conway':
+                include 'controllers/Conway.php';
+
+                $projectController = new Conway;
+                $projectController ->handleRequest();
+                break;
+
             default:
                 $title = 'Portfolio Nathan Melin';
                 include 'views/projet.php';
