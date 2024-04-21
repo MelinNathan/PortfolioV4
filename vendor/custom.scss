@@ -1,0 +1,19 @@
+// Import Bootstrap source files
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/code';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/tables';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/buttons';
+
+// Override Bootstrap variables
+$primary: #28a745; // Change this to your desired color
+
+// Include all of Bootstrap
+@import '~bootstrap/scss/bootstrap';
