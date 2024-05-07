@@ -135,3 +135,15 @@ body {
 .test{
   color : #353535;
 }
+
+
+.projectBlockP{
+  border-left : 1px solid #E7C488;
+}
+.projectBlockS{
+  border-right : 1px solid #E7C488;
+}
+
+.row{
+  --bs-gutter-x: 0rem;
+}

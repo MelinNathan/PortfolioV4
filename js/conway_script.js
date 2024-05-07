@@ -79,19 +79,11 @@ function main() {
     initGrid(grid);
     
     
-    function update() {
-        drawGrid(grid, ctx);
-        grid = applyRules(grid);
-        requestAnimationFrame(update);
-        generation++;
-        showGeneration.innerText = generation;
-        if( generation == 20){
-            //TODO trouver un moyen de stop le truc
-        }
-    }
 
     update();
     
 }
+
+
 let generation = 0;
 main();

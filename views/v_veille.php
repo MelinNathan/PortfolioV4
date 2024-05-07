@@ -1,5 +1,5 @@
 <!-- navbar + doctype -->
-<?php include 'views/navbar.php' ?>
+<?php include 'views/v_navbar.php' ?>
 <div class="mt-3 d-flex justify-content-center">
     <h1>Ma veille technologique</h1>
 </div>
@@ -96,5 +96,5 @@
 
     <!-- footer -->
     <div class="mt-5">
-        <?php include 'views/footer.php' ?>
+        <?php include 'views/v_footer.php' ?>
     </div>

@@ -1,5 +1,5 @@
 <!-- navbar + doctype -->
-<?php include 'views/navbar.php' ?>
+<?php include 'views/v_navbar.php' ?>
 <div class="mt-3 d-flex justify-content-center">
     <h1 >Mes Stages</h1>
 </div>
@@ -127,4 +127,4 @@
 
 
 
-    <?php include 'views/footer.php' ?>
+    <?php include 'views/v_footer.php' ?>

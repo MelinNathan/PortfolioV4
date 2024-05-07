@@ -2,6 +2,6 @@
 class Stage {
     public function handleRequest() {
         $title = 'Stages - Nathan Melin';
-        include 'views/stage.php';
+        include 'views/v_stage.php';
     }
 }

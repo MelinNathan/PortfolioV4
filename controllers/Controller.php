@@ -6,7 +6,7 @@ class Controller
         switch ($page) {
             case 'index':
                 $title = 'Portfolio Nathan Melin';
-                include 'views/index.php';
+                include 'views/v_index.php';
                 break;
 
             case 'projet':
@@ -30,10 +30,6 @@ class Controller
                 $portfolioController = new Skill();
                 $portfolioController->handleRequest();
                 break;
-            // default:
-            //     $title = 'Portfolio Nathan Melin';
-            //     include 'views/index.php';
-            //     break;
         }
     }
 }

@@ -1,9 +1,12 @@
 <?php
-include 'views/navbar.php';
+include 'views/v_navbar.php';
 ?>
 
+<canvas id="canvas" width="500" height="500"></canvas>
+<p>Génération: <span id="labelNbGeneration">0</span></p>
 
-<canvas id="canvas" height="500" width="500"></canvas>
-<p id ="labelNbGeneration">i</p>
+<button id="pauseButton">Pause</button>
+
+
 
 <script src="./js/conway_script.js"></script>

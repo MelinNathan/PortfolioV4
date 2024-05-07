@@ -1,7 +1,7 @@
 <?php
 class Projet
 {
-    
+
     public function handleRequest($projet)
     {
 
@@ -15,14 +15,13 @@ class Projet
                 break;
             case 'conway':
                 include 'controllers/Conway.php';
-
                 $projectController = new Conway;
-                $projectController ->handleRequest();
+                $projectController->handleRequest();
                 break;
 
             default:
                 $title = 'Portfolio Nathan Melin';
-                include 'views/projet.php';
+                include 'views/v_projet.php';
                 break;
         }
     }

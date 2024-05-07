@@ -1,6 +1,6 @@
 <?php
 // include './controllers/Math.php';
-include 'views/navbar.php';
+include 'views/v_navbar.php';
 
 
 
