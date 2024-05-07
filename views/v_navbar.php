@@ -1,7 +1,9 @@
 <?php
 include 'vendor/svg.php';
 
-$age = 21;
+
+$age = (date("M") < 5 || date("d") < 8 ? date("Y") - 2003 : date("Y") - 2002);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +13,7 @@ $age = 21;
   <title> <?= $title ?> </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/global_style.css">
 </head>
 
 <body class="body-bg">

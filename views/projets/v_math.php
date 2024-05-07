@@ -1,5 +1,4 @@
 <?php
-// include './controllers/Math.php';
 include 'views/v_navbar.php';
 
 
@@ -11,6 +10,7 @@ echo Math::power(7, 2);
 echo '</br>';
 echo Math::choose(8, 3);
 ?>
+
 <form method="POST" action="index.php?page=projet&sub=math">
 
     <label for="facto">Factoriel :</label>

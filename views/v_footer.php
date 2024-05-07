@@ -1,4 +1,4 @@
-<div class="footer py-2 text-center">Portfolio Nathan Melin - <a target="blank" href="https://github.com/MelinNathan">Github</a> - Contact - <a target="blank" href="vendor/cv.pdf">CV</a>
+<div class="footer py-2 text-center">Portfolio Nathan Melin - <a target="blank" href="https://github.com/MelinNathan">Github</a> - <a href="mailto:nathanmelin49@orange.fr" alt="email">Contact </a>- <a target="blank" href="vendor/cv.pdf">CV</a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

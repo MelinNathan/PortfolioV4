@@ -10,5 +10,8 @@ require_once 'vendor/svg.php';
 $page = (isset($_GET['page'])) ? $_GET['page'] : 'index';
 $sub = (isset($_GET['sub'])) ? $_GET['sub'] : '';
 
+
+
+
 $controller = new Controller();
 $controller->handleRequest($page,$sub);
