@@ -8,5 +8,4 @@ include 'views/v_navbar.php';
 <button id="pauseButton">Pause</button>
 
 
-
-<script src="./js/conway_script.js"></script>
+<?php include 'views/v_footer.php' ?>

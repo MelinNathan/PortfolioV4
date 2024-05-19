@@ -1,0 +1,26 @@
+.radio-button {
+  display: inline-block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Style pour les boutons radio lorsque survolés */
+.radio-button:hover {
+  background-color: #f0f2ca;
+  color:#20172B;
+}
+
+/* Style pour les boutons radio sélectionnés */
+.radio-button input[type="radio"]:checked + label {
+  background-color: #e7c488;
+  color: #20172B;
+  border-color: #e7c488;
+}
+
+/* Cacher les boutons radio natifs */
+.radio-button input[type="radio"] {
+  display: none;
+}
