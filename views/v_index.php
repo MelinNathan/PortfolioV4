@@ -8,7 +8,7 @@
 <p>Je m'appelle Nathan Melin</p>
 <p>J'ai <?=$age?> ans </p>
 
-
+<p>Je suis actuellement en BTS Services Informatiques aux Organisations option développemnt Web et Logiciel</p>
 
 
 <?php include 'views/v_footer.php' ?>
