@@ -4,11 +4,11 @@ include 'views/v_navbar.php';
 
 
 // echo Math::facto(7);
-echo Math::facto(intval(5));
-echo '</br>';
-echo Math::power(7, 2);
-echo '</br>';
-echo Math::choose(8, 3);
+// echo Math::facto(intval(5));
+// echo '</br>';
+// echo Math::power(7, 2);
+// echo '</br>';
+// echo Math::choose(8, 3);
 ?>
 
 <form method="POST" action="index.php?page=projet&sub=math" id="mathForm">

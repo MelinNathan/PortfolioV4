@@ -2,15 +2,13 @@
 
 class Controller
 {
-    public function handleRequest($page,$sub)
+    public function handleRequest($page, $sub)
     {
-        $pdo = PdoPortfolio::getPdoPortfolio();
         switch ($page) {
             case 'index':
-                
-                $pendingLearning = $pdo->getPendingApprentissage();
 
-                $statut ="En recherche d'alternance";
+
+                $statut = "En recherche d'alternance";
                 $title = 'Portfolio Nathan Melin';
                 include 'views/v_index.php';
                 break;

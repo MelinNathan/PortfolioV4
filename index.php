@@ -1,6 +1,4 @@
 <?php
-require_once 'model/class.pdo.portfoliov4.inc.php';
-$pdo = PdoPortfolio::getPdoPortfolio();
 require_once 'controllers/Controller.php';
 require_once 'controllers/fonction.php';
 require_once 'vendor/svg.php';
