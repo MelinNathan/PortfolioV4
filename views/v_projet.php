@@ -71,10 +71,10 @@
             <h1>Mes Projets Scolaires</h1>
         </div>
         <div class="row text-center mt-5">
-            <h2>PPE4</h2>
+            <h2><a href="index.php?page=projet&sub=mudry" >PPE3</a></h2>
         </div>
         <div class="row text-center mt-5">
-            <h2>PPE5</h2>
+            <h2><a href="index.php?page=projet&sub=sigean" >PPE4</a></h2>
         </div>
         <div class="row text-center mt-5">
             <h2>&nbsp;</h2>
@@ -91,6 +91,10 @@
         </div>
         <div class="row text-center  mt-5">
             <h2> <a href="index.php?page=projet&sub=conway">Conway's Game of Life (en cours)</a> </h2>
+        </div>
+
+        <div class="row text-center  mt-5">
+            <h2> <a href="index.php?page=projet&sub=avis">Donnez votre avis</a> </h2>
         </div>
 
         <div class="row text-center  mt-5">

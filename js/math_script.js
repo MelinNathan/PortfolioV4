@@ -11,36 +11,36 @@ document.addEventListener('DOMContentLoaded', function() {
            
             switch(this.value){
                 case 'facto':
-                    inputK.style.display ="none";
-                    inputN.style.display ="";
-                    inputP.style.display ="none";
-                    labelK.style.display ="none";
-                    labelN.style.display ="";
-                    labelP.style.display ="none";
+                    inputK.disabled = true;
+                    inputN.disabled = false;
+                    inputP.disabled = true;
+                    labelK.disabled = true;
+                    labelN.disabled = false;
+                    labelP.disabled = true;
                     break;
                 case 'power':
-                    inputK.style.display ="none";
-                    inputN.style.display ="";
-                    inputP.style.display ="";
-                    labelK.style.display ="none";
-                    labelN.style.display ="";
-                    labelP.style.display ="";
+                    inputK.disabled = true;
+                    inputN.disabled = false;
+                    inputP.disabled = false;
+                    labelK.disabled = true;
+                    labelN.disabled = false;
+                    labelP.disabled = false;
                 break;
                 case 'choose':
-                    inputK.style.display ="";
-                    inputN.style.display ="";
-                    inputP.style.display ="none";
-                    labelK.style.display ="";
-                    labelN.style.display ="";
-                    labelP.style.display ="none";
+                    inputK.disabled = false;
+                    inputN.disabled = false;
+                    inputP.disabled = true;
+                    labelK.disabled = false;
+                    labelN.disabled = false;
+                    labelP.disabled = true;
                     break;
                     case 'reset':
-                        inputK.style.display ="";
-                        inputN.style.display ="";
-                        inputP.style.display ="";
-                        labelK.style.display ="";
-                        labelN.style.display ="";
-                        labelP.style.display ="";
+                        inputK.disabled = false;
+                        inputN.disabled = false;
+                        inputP.disabled = false;
+                        labelK.disabled = false;
+                        labelN.disabled = false;
+                        labelP.disabled = false;
                         break;
             }
         });
