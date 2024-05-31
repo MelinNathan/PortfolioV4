@@ -12,13 +12,19 @@ class Math
 
         switch ($type) {
             case "facto":
-                $result = Math::facto(intval($n));
+                $result = Math::facto(floatval($n));
                 break;
             case "power":
-                $result = Math::power(intval($n), intval($p));
+                $result = Math::power(floatval($n), floatval($p));
                 break;
             case "choose":
-                $result = Math::choose(intval($k), intval($n));
+                $result = Math::choose(floatval($k), floatval($n));
+                break;
+            case "bernoulli":
+                $result = Math::bernoulli(floatval($n),floatval($p),floatval($k));
+                break;
+            default:
+                $result = "";
                 break;
         }
 
@@ -28,7 +34,7 @@ class Math
         include 'views/projets/v_math.php';
     }
 
-    public static function facto(int $n)
+    public static function facto(float $n)
     {
         $result = 1;
         for ($i = 1; $i != $n + 1; $i++) {
@@ -37,7 +43,7 @@ class Math
         return $result;
     }
 
-    public static function power($n, $p)
+    public static function power(float $n, float $p)
     {
         $result = 1;
         if ($p != 0) {
@@ -46,13 +52,11 @@ class Math
             }
         } else if ($p < 0) {
             $result = "Un nombre ne peut être négatif";
-        } else if (is_string($n) || is_string($p)) {
-            $result = "Veuillez mettre une nombre positif";
-        }
+        } 
         return $result;
     }
 
-    public static function choose(int $k, int $n)
+    public static function choose(float $k, float $n)
     {
         if ($k > $n) {
             $result = 'k ne peut être supérieur à n';
@@ -60,6 +64,17 @@ class Math
             $result = 1;
         } else {
             $result = Math::facto($n) / (Math::facto($k) * Math::facto($n - $k));
+        }
+        return $result;
+    }
+
+    public static function bernoulli(float $n, float $p, float $k){
+        if (($p<0) || ($p>1)){
+            $result = 'La probabilité p doit être comprise en 0 et 1';
+        } else {
+            $result = Math::choose($k,$n) * 
+            Math::power($p, $k) * 
+            Math::power((1-$p),($n-$k));
         }
         return $result;
     }

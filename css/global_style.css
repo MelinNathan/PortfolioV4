@@ -3,6 +3,16 @@ body {
   position: relative; /* Définir une position relative pour que les éléments enfants soient positionnés par rapport à lui */
 }
 
+a{
+  color : rgb(240, 242, 202);
+}
+
+a:hover{
+  color : #e7c488;
+}
+
+
+
 .index_presentation,.index_statut{
   font-size: larger;
 }
@@ -11,6 +21,8 @@ body {
   background-color: #e7c488;
   color : #20172B;
 }
+
+
 
 .dark-mode {
   background-color: rgb(32, 23, 43);
